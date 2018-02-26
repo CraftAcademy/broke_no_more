@@ -18,3 +18,13 @@ module BrokeNoMore
     config.generators.system_tests = nil
   end
 end
+
+
+config.generators do |generate|
+	generate.helper false
+	generate.assets false
+	generate.view_specs false
+	generate.helper_specs false
+	generate.controller_specs false
+	generate.system_test false
+end

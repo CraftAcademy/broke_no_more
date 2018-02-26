@@ -8,7 +8,7 @@ development:
   <<: *default
   database: broke_no_more_development
 
-test:
+test: &test
   <<: *default
   database: broke_no_more_test
 
@@ -17,3 +17,6 @@ production:
   database: broke_no_more_production
   username: broke_no_more
   password: <%= ENV['BROKE_NO_MORE_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
