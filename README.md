@@ -1,24 +1,20 @@
-# README
+# Project Title
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Broke No More
 
-Things you may want to cover:
+## Authors
 
-* Ruby version
+* **Antonella Morittu** - *Initial work* - (https://github.com/AntonellaMorittu)
+* **Isabelle Lidberg** - *Initial work* - (https://github.com/isabellelii)
+* **Fleur Tamboezer** - *Initial work* - (https://github.com/Fleurtam)
+* **Aiden Jubelin** - *Initial work* - (https://github.com/AKidd95)
 
-* System dependencies
+## License
 
-* Configuration
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-* Database creation
+## Acknowledgments
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Cheers for all the help and guidance from the coaches and fellow students at Craft Academy. who help us to learn and grow as developers each and every single day of the camp.
+* Inspiration
+* etc
