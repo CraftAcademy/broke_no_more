@@ -16,15 +16,16 @@ module BrokeNoMore
     config.load_defaults 5.1
 
     config.generators.system_tests = nil
+
+    config.generators do |generate|
+      generate.helper false
+      generate.assets false
+      generate.view_specs false
+      generate.helper_specs false
+      generate.routing_specs false
+      generate.controller_specs false
+      generate.system_test false
+      generate.test_framework :rspec
+    end
   end
-end
-
-
-config.generators do |generate|
-	generate.helper false
-	generate.assets false
-	generate.view_specs false
-	generate.helper_specs false
-	generate.controller_specs false
-	generate.system_test false
 end
