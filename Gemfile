@@ -17,14 +17,15 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-	gem 'factory_bot_rails'
-	gem 'pry-rails'
-	gem 'pry-byebug'
-	gem 'rspec-rails'
-	gem 'cucumber-rails', require: false
-	gem 'database_cleaner'
-	gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
   gem 'launchy'
+  gem 'coveralls', require: false
 end
 
 group :development do
