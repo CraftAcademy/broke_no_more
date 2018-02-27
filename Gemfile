@@ -24,8 +24,8 @@ group :development, :test do
 	gem 'cucumber-rails', require: false
 	gem 'database_cleaner'
 	gem 'shoulda-matchers'
-  gem 'coveralls', require: false
   gem 'launchy'
+  gem 'coveralls', require: false
 end
 
 group :development do
