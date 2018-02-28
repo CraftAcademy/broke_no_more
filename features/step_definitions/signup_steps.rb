@@ -2,12 +2,12 @@ Given("user visit the site") do
   visit root_path
 end
 
-Then("user click on {string} button") do |signup|
-  click_link_or_button signup
+Then("user click on {string} button") do |button|
+  click_on(button)
 end
 
-Then("He fills in {string} with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("He fills in {string} with {string}") do |input, value|
+  fill_in(input, :with => value)
 end
 
 Then("He clicks {string}") do |string|
