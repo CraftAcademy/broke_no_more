@@ -1,1 +1,7 @@
 <h1>Welcome to Broke No More!</h1>
+
+<%= form_with url: home_index_path do |form| %>
+  <%= "Enter Monthly Income" %>
+  <%= form.number_field :income, :placeholder => "Fill here" %>
+  <%= form.submit ("Submit")%>
+<% end %>
