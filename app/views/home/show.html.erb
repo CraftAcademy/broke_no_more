@@ -1,0 +1,5 @@
+<%= form_for(@income, url: home_path) do |form| %>
+  <%= "Enter Monthly Income" %>
+  <%= form.number_field :amount, :placeholder => "Fill here" %>
+  <%= form.submit ("Submit")%>
+<% end %>
