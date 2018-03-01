@@ -9,7 +9,7 @@ Feature: User login
     | antonella@email.com   | password123 |
 
   Scenario: User successfully logs in
-    Given I am on the landing-page
+    Given User visits the site
     And I click "Login"
     When I fill in "Email" with "antonella@email.com"
     And I fill in "Password" with "password123"
@@ -17,7 +17,7 @@ Feature: User login
     Then I should see "Signed in successfully. Logged in as antonella@email.com."
 
   Scenario: User inserts wrong email address
-    Given I am on the landing-page
+    Given User visits the site
     And I click "Login"
     When I fill in "Email" with "antonellaemail.com"
     And I fill in "Password" with "password123"
@@ -25,7 +25,7 @@ Feature: User login
     Then I should see "Invalid Email or password."
 
   Scenario: User inserts wrong password
-    Given I am on the landing-page
+    Given User visits the site
     And I click "Login"
     When I fill in "Email" with "antonella@email.com"
     And I fill in "Password" with "123"

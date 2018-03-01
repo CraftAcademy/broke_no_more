@@ -25,6 +25,3 @@ Feature: User can sign up
      When I fill "Password" with "123"
      And I click on "Sign up"
      Then I should see message "Password is too short (minimum is 6 characters)"
-   #
-   #
-   #    Password is too short (minimum is 8 characters)

@@ -7,7 +7,7 @@ Then("User clicks on {string} button") do |button|
 end
 
 Then("I fill {string} with {string}") do |input, value|
-  fill_in(input, :with => value)
+  fill_in input, with: value
 end
 
 Then("I click on {string}") do |button|
