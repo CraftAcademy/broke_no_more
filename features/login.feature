@@ -15,5 +15,4 @@ Feature: User login
     And I fill in "Password" with "password123"
     And I click "Log in" button
     Given I am logged in
-    Then show me the page
     And I should see "Hello there! Be ready to save money"

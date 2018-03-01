@@ -21,9 +21,6 @@ When("I click {string} button") do |button|
 end
 
 Given("I am logged in") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then("show me the page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  user = FactoryBot.create(:user)
+  login_as(user, :scope => :user, :run_callbacks => false)
 end
