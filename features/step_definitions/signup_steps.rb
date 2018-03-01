@@ -2,10 +2,6 @@ Given("I visit the site") do
   visit root_path
 end
 
-# Then("I click on {string} button") do |button|
-#   click_on(button)
-# end
-
 Then("I fill {string} with {string}") do |input, value|
   fill_in input, with: value
 end

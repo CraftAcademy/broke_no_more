@@ -11,7 +11,3 @@ end
 When("I fill in {string} with {string}") do |input, value|
   fill_in input, with: value
 end
-
-When("I click {string} button") do |button|
-  click_on(button)
-end
