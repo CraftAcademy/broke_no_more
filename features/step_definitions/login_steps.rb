@@ -5,11 +5,11 @@ Given("following user exist") do |table|
 end
 
 Given("I am on the landing-page") do
-  visit root_path 
+  visit root_path
 end
 
-Given("I click {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Given("I click {string}") do |button|
+  click_on button
 end
 
 When("I fill in {string} with {string}") do |string, string2|
