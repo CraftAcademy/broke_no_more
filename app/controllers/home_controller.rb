@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   end
 
   def show
-    @income = Income.new
+    @income = Income.new(params:id)
   end
 
   def update
