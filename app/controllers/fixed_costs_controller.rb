@@ -3,9 +3,17 @@ class FixedCostsController < ApplicationController
   def new
   end
 
-  def create
-    @fixed_cost = Fixed_cost.new(fixed_cost_params)
-  end
+    def create
+      @fixed_cost = FixedCost.new(fixed_cost_params)
+      if @fixed_cost.save
+        flash[:success] = "Fixed costs saved!"
+        redirect_to home_index_path
+      else
+        flash[:error] = "Please enter valid amount"
+        render 'new'
+      end
+    end
+
 
   private
 

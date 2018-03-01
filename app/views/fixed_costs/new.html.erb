@@ -1,10 +1,10 @@
-<%= form_with model: Fixed_cost.new do |form| %>
+<%= form_with model: FixedCost.new do |form| %>
   <%= "Enter Fixed Expenses" %>
-  <%= form.text_field :rent, :placeholder => "Rent" %>
-  <%= form.text_field :insurance, :placeholder => "Insurance" %>
-  <%= form.text_field :transportation, :placeholder => "Transportation" %>
-  <%= form.text_field :education, :placeholder => "Education" %>
-  <%= form.text_field :food, :placeholder => "Food" %>
-  <%= form.text_field :other, :placeholder => "Other" %>
+  <%= form.text_field :rent, placeholder: "Rent" %>
+  <%= form.text_field :insurance, placeholder: "Insurance" %>
+  <%= form.text_field :transportation, placeholder: "Transportation" %>
+  <%= form.text_field :education, placeholder: "Education" %>
+  <%= form.text_field :food, placeholder: "Food" %>
+  <%= form.text_field :other, placeholder: "Other" %>
   <%= form.submit ("Submit")%>
 <% end %>
