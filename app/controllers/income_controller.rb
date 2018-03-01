@@ -3,7 +3,6 @@ class IncomeController < ApplicationController
   def new
   end
 
-
   def create
     @income = Income.new(amount: params[:amount])
     if @income.save
@@ -17,7 +16,6 @@ class IncomeController < ApplicationController
 
   def update
   end
-
 
 
 end
