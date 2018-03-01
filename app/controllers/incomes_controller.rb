@@ -14,9 +14,6 @@ class IncomesController < ApplicationController
       end
     end
 
-    def update
-    end
-
     private
 
     def income_params

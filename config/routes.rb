@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :home, only: [:create, :index, :update, :show]
+  resources :home, only: :index
 
-  resources :incomes
+  resources :incomes, only: [:new, :create]
 
   root controller: :home, action: :index
 
