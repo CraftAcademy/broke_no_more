@@ -4,7 +4,7 @@ class IncomeController < ApplicationController
   end
 
   def create
-    @income = Income.new(amount: params[:amount])
+    @income = Income.new(income_params)
     if @income.save
       flash[:success] = "Income successfully added!"
       redirect_to home_index_path
@@ -17,5 +17,10 @@ class IncomeController < ApplicationController
   def update
   end
 
+  private
+
+  def income_params
+    params.require(:income).permit(:amount)
+  end
 
 end
