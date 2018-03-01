@@ -15,7 +15,7 @@ end
 
 Shoulda::Matchers.configure do |config|
 	config.integrate do |with|
-	with.test.framework :spec
+	with.test.framework :rspec
 	with.library :rails
 	end
 end
