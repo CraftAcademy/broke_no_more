@@ -9,4 +9,4 @@ Feature: User can enter monthly income
   And he sees "Enter Monthly Income" form
   And he fills in "Fill here" with "30000"
   And he clicks "Submit"
-  Then he should see "income successfully added"
+  Then he should see "Income successfully added"
