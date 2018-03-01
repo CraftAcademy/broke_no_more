@@ -7,9 +7,9 @@ When("I click on {string}") do |button|
 end
 
 Then("I should see {string} form") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content string
 end
 
-Then("I fill in {string} field with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("I fill in {string} field with {string}") do |input, value|
+  fill_in(input, :with => value)
 end

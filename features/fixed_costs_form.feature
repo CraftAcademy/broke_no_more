@@ -6,7 +6,7 @@ I should be able to enter all the fields
 Scenario: Fills in fixed costs form
   Given I am on home page
   When I click on "Fixed Costs"
-  And I should see "Fixed Cost" 
+  And I should see "Enter Fixed Expenses" 
   And I fill in 'Rent' field with '30000'
   And I fill in 'Insurance' field with '300'
   And I fill in 'Transportation' field with '1000'

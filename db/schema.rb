@@ -16,6 +16,12 @@ ActiveRecord::Schema.define(version: 20180301162136) do
   enable_extension "plpgsql"
 
   create_table "fixed_costs", force: :cascade do |t|
+    t.integer "rent"
+    t.integer "insurance"
+    t.integer "transportation"
+    t.integer "education"
+    t.integer "food"
+    t.integer "other"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
