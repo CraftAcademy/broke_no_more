@@ -3,7 +3,6 @@ class HomeController < ApplicationController
   end
 
   def create
-    binding.pry
   end
 
   def show
@@ -11,7 +10,6 @@ class HomeController < ApplicationController
   end
 
   def update
-    binding.pry
   end
 
 end
