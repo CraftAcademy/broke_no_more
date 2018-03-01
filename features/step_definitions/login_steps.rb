@@ -19,8 +19,3 @@ end
 When("I click {string} button") do |button|
   click_on(button)
 end
-
-Given("I am logged in") do
-  user = FactoryBot.create(:user)
-  login_as(user, :scope => :user, :run_callbacks => false)
-end
