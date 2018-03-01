@@ -16,8 +16,8 @@ When("I fill in {string} with {string}") do |input, value|
 fill_in(input, :with => value)
 end
 
-When("I click {string} button") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I click {string} button") do |button|
+  click_on(button)
 end
 
 Given("I am logged in") do
