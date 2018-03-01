@@ -10,10 +10,10 @@ Then("He fills in {string} with {string}") do |input, value|
   fill_in(input, :with => value)
 end
 
-Then("He clicks {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("He clicks {string}") do |button|
+  click_on(button)
 end
 
-Then("He sees message {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("He sees message {string}") do |message|
+  expect(page).to have_content(message)
 end
