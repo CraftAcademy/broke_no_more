@@ -1,4 +1,4 @@
-Feature: User visits the home page
+Feature: I visit the site the home page
 As a user
 In order to use the app
 I should see a home page
