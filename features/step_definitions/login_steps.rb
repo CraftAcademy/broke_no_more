@@ -5,7 +5,7 @@ Given("following user exist") do |table|
 end
 
 Given("I am on the landing-page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit root_path 
 end
 
 Given("I click {string}") do |string|
