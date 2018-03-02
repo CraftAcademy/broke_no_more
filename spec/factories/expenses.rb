@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :fixed_cost do
-    
+  factory :expense do
+
   end
 end
