@@ -3,7 +3,7 @@ class ExpensesController < ApplicationController
   end
 
   def create
-    @expense = Expense.new(fixed_cost_params)
+    @expense = Expense.new(expense_params)
     if @expense.save
       flash[:success] = "Expense saved!"
       redirect_to home_index_path
@@ -16,7 +16,9 @@ class ExpensesController < ApplicationController
 
   private
 
-  def fixed_cost_params
-    params.require(:expense).permit(:rent, :insurance, :transportation, :education, :food, :other)
+  def expense_params
+    params.require(:expense).permit(:rent, :insurance, :transportation,
+       :education, :food, :leisure_activities, :cultural_activities,
+       :holidays, :sport, :eating_out, :beauty, :various)
   end
 end

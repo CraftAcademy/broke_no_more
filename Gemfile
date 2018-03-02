@@ -17,6 +17,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 
+
 group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
