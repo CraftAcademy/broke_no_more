@@ -1,0 +1,2 @@
+class SavingGoalsController < ApplicationController
+end

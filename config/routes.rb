@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :expenses
 
+  resources :saving_goal
+
   root controller: :home, action: :index
 
 end
