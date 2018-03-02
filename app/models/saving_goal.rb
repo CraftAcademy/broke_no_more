@@ -1,0 +1,2 @@
+class SavingGoal < ApplicationRecord
+end
