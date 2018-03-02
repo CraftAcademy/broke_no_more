@@ -9,3 +9,9 @@
 <% end %>
 </p>
 <h1>Welcome to Broke No More!</h1>
+
+<%= link_to "New Income", new_income_path %>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
