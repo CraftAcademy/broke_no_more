@@ -4,9 +4,11 @@ Rails.application.routes.draw do
 
   resources :incomes, only: [:new, :create]
 
-  devise_for :users
-
   resources :expenses
+
+  resources :saving_goals, only: [:new, :create]
+
+  devise_for :users
 
   root controller: :home, action: :index
 
