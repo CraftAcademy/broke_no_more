@@ -10,5 +10,4 @@ Rails.application.routes.draw do
 
   root controller: :home, action: :index
 
-  root 'home#index'
 end

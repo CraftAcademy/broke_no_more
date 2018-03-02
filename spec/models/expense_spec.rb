@@ -9,4 +9,11 @@ RSpec.describe Expense, type: :model do
     it { should have_db_column :other }
     it { should have_db_column :insurance }
   end
+
+  describe 'Factory' do
+    it 'should have valid Factory' do
+      expect(FactoryBot.create(:expense)).to be_valid
+    end
+  end
+
 end

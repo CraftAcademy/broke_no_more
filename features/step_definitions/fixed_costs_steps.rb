@@ -11,5 +11,5 @@ Then("I should see {string} form") do |string|
 end
 
 Then("I fill in {string} field with {string}") do |input, value|
-  fill_in(input, :with => value)
+  fill_in input, with: value
 end
