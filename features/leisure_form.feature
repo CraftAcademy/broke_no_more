@@ -14,5 +14,5 @@ Scenario: Fills in leisure costs form
   And I fill in 'Eating out' field with '3500'
   And I fill in 'Beauty' field with '2000'
   And I fill in 'Various' field with '2000'
-  And I click 'Submit leisure expenses'
+  And I click 'Submit'
   And I should see 'Expense saved!'

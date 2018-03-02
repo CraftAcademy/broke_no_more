@@ -6,10 +6,6 @@
   <%= form.text_field :education, placeholder: "Education" %>
   <%= form.text_field :food, placeholder: "Food" %>
   <%= form.text_field :other, placeholder: "Other" %>
-  <%= form.submit ("Submit fixed expenses")%>
-<% end %>
-
-<%= form_with model: Expense.new do |form| %>
   <%= "Enter Leisure Expenses" %>
   <%= form.text_field :leisure_activities, placeholder: "Leisure activities" %>
   <%= form.text_field :cultural_activities, placeholder: "Cultural activities" %>
@@ -18,5 +14,5 @@
   <%= form.text_field :eating_out, placeholder: "Eating out" %>
   <%= form.text_field :beauty, placeholder: "Beauty" %>
   <%= form.text_field :various, placeholder: "Various" %>
-  <%= form.submit ("Submit leisure expenses")%>
+  <%= form.submit ("Submit")%>
 <% end %>

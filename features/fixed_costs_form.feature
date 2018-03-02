@@ -12,6 +12,5 @@ Scenario: Fills in fixed costs form
   And I fill in 'Transportation' field with '1000'
   And I fill in 'Education' field with '380'
   And I fill in 'Food' field with '3500'
-  And I fill in 'Other' field with '2000'
-  And I click 'Submit fixed expenses'
+  And I click 'Submit'
   And I should see 'Expense saved!'
