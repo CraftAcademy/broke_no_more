@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180301162136) do
+ActiveRecord::Schema.define(version: 20180302091850) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "fixed_costs", force: :cascade do |t|
+  create_table "expenses", force: :cascade do |t|
     t.integer "rent"
     t.integer "insurance"
     t.integer "transportation"

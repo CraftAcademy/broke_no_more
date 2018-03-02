@@ -14,4 +14,4 @@ Scenario: Fills in fixed costs form
   And I fill in 'Food' field with '3500'
   And I fill in 'Other' field with '2000'
   And I click on "Submit"
-  And I should see "Total fixed costs"
+  And I should see "New Income Expense saved!"

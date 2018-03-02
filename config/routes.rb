@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :fixed_costs
+  resources :expenses
 
   root controller: :home, action: :index
 
