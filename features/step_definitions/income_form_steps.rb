@@ -3,7 +3,7 @@ Given("he is on home page") do
 end
 
 Given("he fills in {string} with {string}") do |input, value|
-  fill_in(input, :with => value)
+  fill_in(input, with: value)
 end
 
 Given("he clicks {string}") do |button|
