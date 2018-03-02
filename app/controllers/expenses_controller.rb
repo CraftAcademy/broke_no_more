@@ -19,4 +19,8 @@ class ExpensesController < ApplicationController
   def fixed_cost_params
     params.require(:expense).permit(:rent, :insurance, :transportation, :education, :food, :other)
   end
+
+  def leisure_cost_params
+    params.require(:expense).permit(:leisure_activities, :cultural_activities, :holidays, :sport, :eating_out, :beauty, :various)
+  end
 end

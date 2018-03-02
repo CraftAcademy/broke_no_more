@@ -5,7 +5,7 @@ Feature: Be able to enter monthly fixed costs
 
 Scenario: Fills in fixed costs form
   Given I am on home page
-  When I click on 'New Expense'
+  When I click 'New Expense'
   And I should see 'Enter Fixed Expenses'
   And I fill in 'Rent' field with '30000'
   And I fill in 'Insurance' field with '300'
@@ -13,5 +13,5 @@ Scenario: Fills in fixed costs form
   And I fill in 'Education' field with '380'
   And I fill in 'Food' field with '3500'
   And I fill in 'Other' field with '2000'
-  And I click on 'Submit'
-  And I should see 'New Income Expense saved!'
+  And I click 'Submit fixed expenses'
+  And I should see 'Expense saved!'
