@@ -28,6 +28,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'coveralls', require: false
+  gem 'omniauth-facebook', '~> 4.0'
+  gem 'stripe-rails', '~> 1.1', '<= 1.1.2'
 end
 
 group :development do
