@@ -1,4 +1,4 @@
-<%= form_with model: Expense.new do |form| %>
+<%= form_with model: Expense.new, url: home_index_path do |form| %>
   <%= "Enter Fixed Expenses" %>
   <%= form.text_field :rent, placeholder: "Rent" %>
   <%= form.text_field :insurance, placeholder: "Insurance" %>
