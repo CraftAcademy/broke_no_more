@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.describe Income, type: :model do
   it { should have_db_column :amount}
 
-  it { should belong_to :user}
+  describe 'Associations' do
+    it { should belong_to :user}
+  end
 
   describe 'Factory' do
     it 'should have valid Factory' do
