@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Income, type: :model do
-  it { should have_db_column :amount}
+
+  describe 'DB table' do
+    it { should have_db_column :amount}
+  end
 
   describe 'Associations' do
     it { should belong_to :user}
