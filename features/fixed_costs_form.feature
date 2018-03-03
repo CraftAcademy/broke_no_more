@@ -3,6 +3,12 @@ Feature: Be able to enter monthly fixed costs
   In order to know what my fixed cost total is
   I should be able to enter all the fields
 
+  Background:
+    Given following user exist
+    | email                 | password |
+    | antonella@email.com   | password123 |
+    And I am logged in as 'antonella@email.com'
+
 Scenario: Fills in fixed costs form
   Given I am on home page
   When I click 'New Expense'

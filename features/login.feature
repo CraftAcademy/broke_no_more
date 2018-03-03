@@ -13,7 +13,7 @@ Feature: User login
     And I click "Login"
     When I fill in "Email" with "antonella@email.com"
     And I fill in "Password" with "password123"
-    And I click "Log in" 
+    And I click "Log in"
     Then I should see "Signed in successfully. Logged in as antonella@email.com."
 
   Scenario: User inserts wrong email address

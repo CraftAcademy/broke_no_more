@@ -5,9 +5,10 @@ class IncomesController < ApplicationController
 
     def create
       @income = Income.new(income_params)
+      @income.user = current_user
       if @income.save
         flash[:success] = "Income successfully added!"
-        redirect_to home_index_path
+        render 'home/index'
       else
         flash[:error] = "Please enter valid amount"
         render 'new'

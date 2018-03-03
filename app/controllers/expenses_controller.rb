@@ -4,9 +4,10 @@ class ExpensesController < ApplicationController
 
   def create
     @expense = Expense.new(expense_params)
+    @expense.user = current_user
     if @expense.save
       flash[:success] = "Expense saved!"
-      redirect_to home_index_path
+      render 'home/index'
     else
       flash[:error] = "Please enter valid amount"
       render 'new'
