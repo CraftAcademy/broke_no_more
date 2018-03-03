@@ -8,11 +8,10 @@ RSpec.describe Expense, type: :model do
     it { should have_db_column :food }
     it { should have_db_column :other }
     it { should have_db_column :insurance }
-
-    describe 'Associations' do
-      it { should belong_to :user}
-    end
-
+  end
+  
+  describe 'Associations' do
+    it { should belong_to :user}
   end
 
   describe 'Factory' do
