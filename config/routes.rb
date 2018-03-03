@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :incomes, only: [:new, :create]
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: :omniauth_callbacks}
 
   resources :expenses
 
