@@ -1,2 +1,43 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+.nav-link {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.bg-light {
+    background-color: #F79818   !important;
+}
+
+.jumbotron {
+  margin-top: 0rem;
+  // padding: 4rem 0rem;
+  margin-bottom: 8rem;
+  background-image: url("../images/brokenomore.jpeg");
+  background-size: 100%;
+  min-height: 837px;
+}
+
+h1,
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  font-size: 60px;
+  padding: 5%;
+  color: #F77D18;
+}
+
+body,
+element.style {
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  color: tomato;
+}
+
+input, button, select, optgroup, textarea {
+    color: tomato;
+    margin: 9px;
+}
