@@ -5,23 +5,32 @@
   font-family: 'Palanquin', sans-serif;
   font-size: 20px;
   color: white;
+  margin-left: 0;
+  padding: 0;
 }
-
 .bg-light {
     background-color: #F79818   !important;
 }
 
 .jumbotron {
   margin-top: 0rem;
-  // padding: 4rem 0rem;
   margin-bottom: 8rem;
-  background-image: url("../images/brokenomore.jpeg");
+  background-image: url('images/brokenomore.png');
   background-size: 100%;
-  min-height: 837px;
+  min-height: 750px;
+  background-repeat: no-repeat;
 }
 
-h1,
-h2 {
+.lead {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+p {
+  font-size: 25px;
+}
+
+h1 {
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
   font-size: 60px;
@@ -29,15 +38,28 @@ h2 {
   color: #F77D18;
 }
 
+h2 {
+  font-family: 'Palanquin', sans-serif;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #F77D18;
+}
+
+h3 {
+  margin-top: 40px;
+
+}
+
 body,
 element.style {
   text-align: center;
   font-family: 'Palanquin', sans-serif;
   font-size: 20px;
-  color: tomato;
+  color: #F77D18;
 }
 
 input, button, select, optgroup, textarea {
-    color: tomato;
+    color: #F77D18;
     margin: 9px;
 }
