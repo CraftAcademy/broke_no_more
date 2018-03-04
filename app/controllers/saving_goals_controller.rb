@@ -3,10 +3,11 @@ class SavingGoalsController < ApplicationController
   end
 
   def create
-    @saving_goal = SavingGoal.new(saving_goal_params)
+    binding.pry
+    @saving_goal = SavingGoal.new(saving_goal_params.merge(user: current_user))
     if @saving_goal.save
       flash[:success] = "Savings Goal saved"
-      redirect_to home_index_path
+      render 'home/index'
     else
       flash[:error] = "Please enter valid amount"
       render 'new'

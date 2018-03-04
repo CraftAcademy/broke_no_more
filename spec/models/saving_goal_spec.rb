@@ -11,12 +11,12 @@ RSpec.describe SavingGoal, type: :model do
   end
 
   describe 'Associations' do
-    it { should belong_to :user}
+    it { should belong_to :user }
   end
 
   describe 'Factory' do
     it 'should have valid Factory' do
-      expect(FactoryBot.create(:income)).to be_valid
+      expect(FactoryBot.create(:user)).to be_valid
     end
   end
 end
