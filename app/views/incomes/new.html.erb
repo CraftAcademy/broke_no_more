@@ -1,5 +1,5 @@
 <%= form_with model: Income.new do |form| %>
   <%= 'Enter Monthly Income' %>
-  <%= form.number_field :amount, placeholder: 'Fill here' %>
-  <%= form.submit ('Submit')%>
+  <%= form.number_field :amount, placeholder: 'Fill here' %><br />
+<p><%= form.submit ('Submit')%></p>
 <% end %>

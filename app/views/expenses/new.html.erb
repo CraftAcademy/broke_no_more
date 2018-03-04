@@ -1,18 +1,23 @@
+<h1>YOUR EXPENSES</h1>
+<h2>How do you spend your income?Let's find it out!</h2><br />
+<h3>Please enter your montlhy fixed expenses:</h3>
 <%= form_with model: Expense.new do |form| %>
-  <%= "Enter Fixed Expenses" %>
+  <!-- <%= "Enter Fixed Expenses" %> -->
   <%= form.text_field :rent, placeholder: "Rent" %>
   <%= form.text_field :insurance, placeholder: "Insurance" %>
   <%= form.text_field :transportation, placeholder: "Transportation" %>
   <%= form.text_field :education, placeholder: "Education" %>
   <%= form.text_field :food, placeholder: "Food" %>
-  <%= form.text_field :other, placeholder: "Other" %>
-  <%= "Enter Leisure Expenses" %>
+  <%= form.text_field :other, placeholder: "Other" %><br />
+
+  <h3>And now your leisure expenses:</h3>
+  <!-- <%= "Enter Leisure Expenses" %> -->
   <%= form.text_field :leisure_activities, placeholder: "Leisure activities" %>
   <%= form.text_field :cultural_activities, placeholder: "Cultural activities" %>
   <%= form.text_field :holidays, placeholder: "Holidays" %>
   <%= form.text_field :sport, placeholder: "Sport" %>
   <%= form.text_field :eating_out, placeholder: "Eating out" %>
   <%= form.text_field :beauty, placeholder: "Beauty" %>
-  <%= form.text_field :various, placeholder: "Various" %>
-  <%= form.submit ("Submit")%>
+  <%= form.text_field :various, placeholder: "Various" %><br />
+  <p><%= form.submit ("Submit")%></p>
 <% end %>
