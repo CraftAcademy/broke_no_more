@@ -1,7 +1,9 @@
 Then("I should be redirected to the home page") do
+  sleep 3
   expect(page.current_path).to eq root_path
 end
 
 Then("my account should state that I signed up with Facebook") do
-  pending # Write code here that turns the phrase above into concrete actions
+  user = User.last
+  expect(user.provider).to eq 'facebook'
 end
