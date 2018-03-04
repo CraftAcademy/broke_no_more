@@ -8,6 +8,12 @@ RSpec.describe User, type: :model do
 
   describe 'Validations' do
     it { is_expected.to validate_presence_of :email }
+    it { is_expected.to validate_presence_of :encrypted_password }
+  end
+
+  describe 'Associations' do
+    it { is_expected.to have_one :income }
+    it { is_expected.to have_many :expenses }
   end
 
   describe 'Factory' do
