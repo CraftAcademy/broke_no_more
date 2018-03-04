@@ -13,8 +13,8 @@ Feature: User login
     And I click "Login"
     When I fill in "Email" with "antonella@email.com"
     And I fill in "Password" with "password123"
-    And I click "Log in" 
-    Then I should see "Signed in successfully. Logged in as antonella@email.com."
+    And I click "Log in"
+    Then I should see "Signed in successfully."
 
   Scenario: User inserts wrong email address
     Given I visit the site
