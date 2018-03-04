@@ -3,15 +3,15 @@ require 'rails_helper'
 RSpec.describe Income, type: :model do
 
   describe 'DB table' do
-    it { should have_db_column :amount}
+    it { should have_db_column :amount }
   end
 
   describe 'Associations' do
-    it { should belong_to :user}
+    it { should belong_to :user }
   end
 
   describe 'Validations' do
-    it {validate_presence_of :amount}
+    it { validate_presence_of :amount }
   end
 
   describe 'Factory' do
