@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
 
 
 group :development, :test do
