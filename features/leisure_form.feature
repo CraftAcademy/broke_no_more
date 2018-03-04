@@ -5,14 +5,14 @@ Feature: Be able to enter monthly leisure costs
 
   Background:
     Given following user exist
-    | email                 | password |
-    | antonella@email.com   | password123 |
+      | email                 | password |
+      | antonella@email.com   | password123 |
     And "antonella@email.com" is logged in
 
   Scenario: Fills in leisure costs form
     Given I am on home page
     When I click 'New Expense'
-    And I should see 'And now your leisure expenses:'
+    Then I should see 'And now your leisure expenses:'
     And I fill in 'Leisure activities' field with '30000'
     And I fill in 'Cultural activities' field with '300'
     And I fill in 'Holidays' field with '1000'
@@ -21,4 +21,4 @@ Feature: Be able to enter monthly leisure costs
     And I fill in 'Beauty' field with '2000'
     And I fill in 'Various' field with '2000'
     And I click 'Submit'
-    And I should see 'Expense saved!'
+    Then I should see 'Expense saved!'

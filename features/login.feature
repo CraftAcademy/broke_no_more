@@ -5,8 +5,8 @@ Feature: User login
 
   Background:
     Given following user exist
-    | email                 | password |
-    | antonella@email.com   | password123 |
+      | email                 | password |
+      | antonella@email.com   | password123 |
 
   Scenario: User successfully logs in
     Given I visit the site
