@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'omniauth-facebook', '~> 4.0'
+
 
 
 group :development, :test do
@@ -28,6 +30,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'coveralls', require: false
+  gem 'dotenv-rails'
+
 end
 
 group :development do

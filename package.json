@@ -1,5 +1,7 @@
 {
   "name": "broke_no_more",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^5.0.1"
+  }
 }
